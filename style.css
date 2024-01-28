@@ -1,0 +1,118 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppons',sans-serif;
+    box-sizing: border-box;
+} */
+.Container{
+    height: 100vh;
+    width: 100%;
+    background: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Calculator{
+    background: #284d82;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.Calculator form input{
+    outline: 0;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    box-shadow: -8px,-8px,15px rgba(255,255,255, 0.1),5px,5px,15px rgba(0,0,0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+form.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 0;
+}
+.display-input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    width: -webkit-fill-available !important;
+    border: solid;
+    border-color: #f19ae1;
+}
+
+form input.operator{
+    color: #C01F9E;
+}
+
+/* CSS */
+.button-7 {
+  touch-action: manipulation;
+  cursor: pointer;
+  position: relative;
+  padding: 1.25rem 3.75rem;
+  border-radius: 1.87rem;
+  line-height: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 150ms ease-in-out;
+  
+  border: 1px solid #012880;
+  background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
+  box-shadow: 0 0.5rem 0.625rem 0 rgba(0,0,0,0.2),
+              0 -0.125rem 0.75rem rgba(110, 15, 155, 1) inset,
+              0 0.375rem 0.125rem rgba(255,255,255, 0.4) inset,
+              0 0.125rem 0.25rem 0 rgba(180, 70, 207, 1) inset;
+}
+
+.button-7 span {
+  color: transparent;
+  background-image: linear-gradient(0deg, #EE82DA -10%, #FEFAFD 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+}
+
+.button-7::before {
+  content: "";
+  display: block;
+  height: 0.125rem;
+  position: absolute;
+  top: 0.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 3.75rem);
+  background: #fff;
+  border-radius: 100%;
+  
+  opacity: 0.7;
+  background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+.button-7::after {
+  content: "";
+  display: block;
+  height: 0.125rem;
+  position: absolute;
+  bottom: 0.375rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 3.75rem);
+  background: #fff;
+  border-radius: 100%;
+  
+  filter: blur(1px);
+  opacity: 0.05;
+  background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+.button-7:hover {
+  filter: brightness(1.1);
+}
+
+.button-7:active {
+  transform: scale(.96);
+}
